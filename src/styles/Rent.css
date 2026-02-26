@@ -1,0 +1,157 @@
+.rent-page {
+  padding: 60px 40px;
+  background: #f8f9fb;
+  min-height: 100vh;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.property-card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.property-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGE SECTION */
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.offer-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #b91c1c;
+  color: white;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.price-tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #000;
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* CONTENT */
+.property-content {
+  padding: 20px;
+}
+
+.property-content h3 {
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.location {
+  color: #777;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.property-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #1b1b1b;
+}
+
+/* ========================= */
+/* BRAND BUTTON STYLE        */
+/* ========================= */
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.card-buttons button {
+  /* background: #7b2828; */
+  background: linear-gradient(135deg, #b71c1c, #8e0000);
+  color: #ffffff;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.4px;
+  
+}
+
+.card-buttons button:hover {
+  background: #991b1b;
+  transform: translateY(-3px);
+  
+}
+
+.card-buttons button:active {
+  transform: scale(0.97);
+  
+}
+
+/* ========================= */
+/* BUTTON LAYOUT STRUCTURE   */
+/* ========================= */
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+/* First row (Zillow + Tour) */
+.card-buttons .top-row {
+  display: flex;
+  gap: 12px;
+}
+
+/* Make both buttons equal width */
+.card-buttons .top-row button {
+  flex: 1;
+}
+
+/* Bottom full width button */
+.card-buttons .details-btn {
+  width: 100%;
+}

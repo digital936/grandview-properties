@@ -1,0 +1,69 @@
+.benefits-section {
+  padding: 80px 20px;
+  background: #faf9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefits-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ben-small-title {
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+.ben-main-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.benefits-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.benefit-card {
+  width: calc(33% - 20px);
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.benefit-id {
+  font-size: 26px;
+  font-weight: 800;
+  color: #2563eb;
+  width: 60px;
+}
+
+.benefit-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.benefit-info p {
+  font-size: 15px;
+  color: #4b5563;
+}
+
+@media (max-width: 980px) {
+  .benefit-card {
+    width: 100%;
+  }
+}

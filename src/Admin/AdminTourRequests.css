@@ -1,0 +1,129 @@
+/* ===== PAGE WRAPPER ===== */
+.admin-wrapper {
+  padding: 50px 20px;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+.admin-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.admin-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+}
+
+/* ===== REQUEST CARD ===== */
+.request-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.request-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== CARD HEADER ===== */
+.request-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.request-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* ===== STATUS BADGE ===== */
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.status-pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-approved {
+  background: #d4edda;
+  color: #155724;
+}
+
+/* ===== DETAILS ===== */
+.request-details p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #0f0f0f;
+}
+
+/* ===== APPROVE BUTTON ===== */
+.approve-btn {
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #c0392b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.approve-btn:hover {
+  background: #a93226;
+}
+
+.license-section {
+  margin-top: 15px;
+}
+
+.view-license-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #0f172a;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.view-license-btn:hover {
+  background: #1e293b;
+}
+
+.license-preview {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  color: #222;
+}
+
+.license-preview {
+  margin-top: 12px;
+}
+
+.license-image {
+  width: 220px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-top: 6px;
+}

@@ -1,0 +1,53 @@
+/* RENT A HOME SECTION */
+.rent-a-home-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.rent-container {
+  max-width: 900px;
+  padding: 0 24px;
+}
+
+.rent-content {
+  margin: auto;
+}
+
+.rent-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.rent-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.rent-description {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.rent-button {
+  background-color: #b91c1c;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.rent-button:hover {
+  background-color: #991b1b;
+}

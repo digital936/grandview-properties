@@ -1,0 +1,72 @@
+/* Page Background */
+.admin-contacts-page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f4f6f9, #eef2f7);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Container */
+.admin-contacts-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Heading */
+.admin-contacts-container h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #1e293b;
+  text-align: center;
+}
+
+/* Empty State */
+.no-messages {
+  text-align: center;
+  color: #64748b;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+/* Contact Card */
+.contact-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+/* Name */
+.contact-card h4 {
+  margin-bottom: 6px;
+  font-size: 18px;
+  color: #0f172a;
+}
+
+/* Email */
+.contact-email {
+  font-size: 14px;
+  color: #2563eb;
+  margin-bottom: 12px;
+}
+
+/* Message */
+.contact-message {
+  font-size: 15px;
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Date */
+.contact-date {
+  font-size: 12px;
+  color: #94a3b8;
+}
