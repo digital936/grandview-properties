@@ -22,6 +22,9 @@ export default function Rent() {
       .select("*")
       .order("created_at", { ascending: false });
 
+      console.log("Fetched Data:", data);
+
+      
     if (error) {
       console.log(error);
     } else {
@@ -38,16 +41,18 @@ export default function Rent() {
     navigate(`/schedule-tour/${id}`);
   };
 
-  // const handleZillow = (zillowLink, e) => {
-  //   e.stopPropagation();
-  //   window.open(zillowLink, "_blank");
-  // };
+  const handleZillow = (zillowLink, e) => {
+    e.stopPropagation();
+    window.open(zillowLink, "_blank");
+  };
 
   return (
     <div className="rent-page">
       <h1 className="page-title">Properties for Rent</h1>
 
       <div className="property-grid">
+
+        {properties.length === 0 && <p>No properties found</p>}
         {properties.map((property) => (
           <div
             className="property-card"
@@ -69,42 +74,24 @@ export default function Rent() {
 
               <p className="location">{property.city}</p>
 
-              {/* <div className="property-info">
-                <span>🛏 {property.beds}</span>
-                <span>🛁 {property.baths}</span>
-                <span>📐 {property.sqft} sqft</span>
-              </div> */}
+              
 
               <div className="property-info">
-  <span><FaBed size={22} /> {property.beds}</span>
-  <span><FaBath size={22} /> {property.baths}</span>
-  <span><BiArea size={22} /> {property.sqft} sqft</span>
-</div>
+                  <span><FaBed size={22} /> {property.beds}</span>
+                  <span><FaBath size={22} /> {property.baths}</span>
+                  <span><BiArea size={22} /> {property.sqft} sqft</span>
+              </div>
 
               <div className="card-buttons">
 
                 <div className="top-row">
-                  {/* <button
-                  className="zillow-btn"
-                  onClick={(e) =>
-                    handleZillow(property.zillow_link, e)
-                  }
-                >
-                  Zillow
-                </button> */}
+                  
 
                 <ZillowButton zillowLink={property.zillow_url} />
 
                 <ScheduleTourModal propertyId={property.id} />
 
-                {/* <button
-                  className="tour-btn"
-                  onClick={(e) =>
-                    handleScheduleTour(property.id, e)
-                  }
-                >
-                  Schedule Tour
-                </button> */}
+                
                 </div>
                 <button
                   className="details-btn"
@@ -124,4 +111,17 @@ export default function Rent() {
       </div>
     </div>
   );
+
+//   return (
+//   <div>
+//     <h1>Test Render</h1>
+//     <p>Length: {properties.length}</p>
+//     {properties.map((p) => (
+//       <div key={p.id}>
+//         <h2>{p.title}</h2>
+//         <p>{p.city}</p>
+//       </div>
+//     ))}
+//   </div>
+// );
 }

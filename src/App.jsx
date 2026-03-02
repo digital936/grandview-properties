@@ -14,6 +14,14 @@ import AdminTourRequests from "./Admin/AdminTourRequests";
 import Feedback from "./pages/Feedback";
 import AdminFeedback from "./Admin/AdminFeedback";
 import AdminContacts from "./Admin/AdminContacts";
+import AdminIssues from "./Admin/AdminIssues";
+import TenantDashboard from "./Tenant/TenantDashboard";
+import OwnerDashboard from "./Owner/OwnerDashboard";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+
+
+
 
 
 
@@ -38,9 +46,16 @@ function App() {
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/admin/feedback" element={<AdminFeedback />} />
         <Route path="/admin/contacts" element={<AdminContacts />} />
-        
+        <Route path="/admin/issues" element={<AdminIssues />} />
+        <Route path="/register" element={<Register />} />
+
+        <Route path="/tenant-dashboard" element={<TenantDashboard />} />
+        <Route path="/owner" element={<OwnerDashboard />} />
+        <Route path="/login" element={<Login />} />
 
       </Routes>
+
+      
     </BrowserRouter>
   );
 }

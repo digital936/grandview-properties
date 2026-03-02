@@ -28,7 +28,8 @@ function Navbar() {
           <a href="/rent">Rent</a>
           <a href="/contact">Contact Us</a>
           <a href="/about">About Us</a>
-          <a href="/admin">Admin</a>
+          {/* <a href="/admin">Admin</a> */}
+          <a href="/Login">Login</a>
           
         </nav>
       </div>

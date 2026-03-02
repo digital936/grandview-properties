@@ -1,0 +1,35 @@
+.admin-page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.admin-page h1 {
+  margin-bottom: 30px;
+  color: #1e3a8a;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+th {
+  background: #f9fafb;
+  font-weight: bold;
+}
+
+tr:hover {
+  background: #f3f4f6;
+}

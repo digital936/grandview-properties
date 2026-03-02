@@ -1,3 +1,7 @@
+body {
+  overflow: auto !important;
+}
+
 .rent-page {
   padding: 60px 40px;
   background: #f8f9fb;
@@ -16,15 +20,20 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
+  width: 100%;
 }
 
 .property-card {
-  background: #ffffff;
-  border-radius: 14px;
+  background: #ffffff !important;
+  border-radius: 14px ;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
   transition: 0.3s ease;
   cursor: pointer;
+  min-height: 350px;
+
+  
+  
 }
 
 .property-card:hover {
@@ -35,6 +44,9 @@
 /* IMAGE SECTION */
 .image-wrapper {
   position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
 }
 
 .image-wrapper img {
@@ -70,6 +82,9 @@
 /* CONTENT */
 .property-content {
   padding: 20px;
+
+  background: white !important;
+
 }
 
 .property-content h3 {
@@ -155,3 +170,4 @@
 .card-buttons .details-btn {
   width: 100%;
 }
+

@@ -60,7 +60,7 @@ export default function PropertyDetails() {
                 ${Number(property.price).toLocaleString()} / month
               </h2>
 
-              {property.zillow_url?.trim() !== "" && (
+              {/* {property.zillow_url?.trim() !== "" && (
                 <a
                   href={property.zillow_url}
                   target="_blank"
@@ -69,7 +69,7 @@ export default function PropertyDetails() {
                 >
                   View on Zillow
                 </a>
-              )}
+              )} */}
             </div>
           </div>
 
